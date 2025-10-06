@@ -43,10 +43,10 @@ from typing_extensions import Annotated
 from pydantic import AnyHttpUrl, Field
 from starlette.requests import Request
 from starlette.responses import RedirectResponse, Response
+from fastmcp import FastMCP
 from mcp.server.auth.middleware.auth_context import get_access_token
 from mcp.server.auth.provider import AccessToken
 from mcp.server.auth.settings import AuthSettings, ClientRegistrationOptions
-from mcp.server.fastmcp.server import FastMCP
 
 logger: logging.Logger = logging.getLogger(__name__)
 
