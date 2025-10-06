@@ -22,14 +22,14 @@ from typing import Dict
 from pydantic import AnyHttpUrl
 from starlette.exceptions import HTTPException
 from urllib.parse import urlencode
-from mcp.server.auth.provider import (
+from fastmcp.auth.provider import (
     AccessToken,
     OAuthAuthorizationServerProvider,
     RefreshToken,
     AuthorizationParams,
     construct_redirect_uri,
 )
-from mcp.shared.auth import OAuthClientInformationFull, OAuthToken
+from fastmcp.shared.auth import OAuthClientInformationFull, OAuthToken
 from fhir_mcp_server.oauth.types import (
     AuthorizationCode,
     OAuthMetadata,

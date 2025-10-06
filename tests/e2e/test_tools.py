@@ -21,9 +21,9 @@ import pytest_asyncio
 import asyncio
 
 from typing import Dict
-import mcp.types as types
-from mcp.client.session import ClientSession
-from mcp.client.streamable_http import streamablehttp_client
+import fastmcp.types as types
+from fastmcp.client.session import ClientSession
+from fastmcp.client.streamable_http import streamablehttp_client
 from contextlib import asynccontextmanager
 
 logging.basicConfig(
