@@ -44,9 +44,9 @@ from pydantic import AnyHttpUrl, Field
 from starlette.requests import Request
 from starlette.responses import RedirectResponse, Response
 from fastmcp import FastMCP
-from fastmcp.auth.middleware import get_access_token
-from fastmcp.auth.provider import AccessToken
-from fastmcp.auth.settings import AuthSettings, ClientRegistrationOptions
+from mcp.server.auth.middleware.auth_context import get_access_token
+from mcp.server.auth.provider import AccessToken
+from mcp.server.auth.settings import AuthSettings, ClientRegistrationOptions
 
 logger: logging.Logger = logging.getLogger(__name__)
 

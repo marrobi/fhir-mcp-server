@@ -19,7 +19,7 @@ import pytest
 import time
 from unittest.mock import Mock, patch
 
-from fastmcp.shared.auth import OAuthClientInformationFull
+from mcp.shared.auth import OAuthClientInformationFull
 from fhir_mcp_server.oauth.server_provider import OAuthServerProvider
 from fhir_mcp_server.oauth.types import OAuthMetadata, ServerConfigs
 
@@ -173,7 +173,7 @@ class TestOAuthServerProvider:
         assert result is None
 
         # Create a mock access token and store it directly
-        from fastmcp.auth.provider import AccessToken
+        from mcp.server.auth.provider import AccessToken
 
         test_token = AccessToken(
             token="real_token",
@@ -199,7 +199,7 @@ class TestOAuthServerProvider:
         provider = OAuthServerProvider(self.mock_configs)
 
         # Add a token first
-        from fastmcp.auth.provider import AccessToken
+        from mcp.server.auth.provider import AccessToken
 
         test_token = AccessToken(
             token="real_token",

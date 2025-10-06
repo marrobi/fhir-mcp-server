@@ -21,7 +21,7 @@ from fhir_mcp_server.oauth import ServerConfigs
 
 from typing import Any, Dict, List, Optional
 from fhirpy import AsyncFHIRClient
-from fastmcp.shared._httpx_utils import create_mcp_http_client
+from mcp.shared._httpx_utils import create_mcp_http_client
 
 logger: logging.Logger = logging.getLogger(__name__)
 

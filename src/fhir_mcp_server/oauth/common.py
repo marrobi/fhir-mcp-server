@@ -27,7 +27,7 @@ from httpx import Response
 
 
 from fhir_mcp_server.oauth.types import OAuthMetadata, OAuthToken
-from fastmcp.shared._httpx_utils import create_mcp_http_client
+from mcp.shared._httpx_utils import create_mcp_http_client
 from starlette.responses import HTMLResponse
 
 logger = logging.getLogger(__name__)
